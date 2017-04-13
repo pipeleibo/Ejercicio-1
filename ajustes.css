@@ -1,0 +1,108 @@
+/* Ajustes a parte del bootstrap */
+body {
+
+  background: #0a91ad; padding-top: 50px /*Se corre todo el contenido un poco más abajo para que no se tape con la barra de contenidos*/
+
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/3isE9muMMOq1K7TQ7HkKvIDGDUGfDkXyfkzVDelzfFk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v6/NL7tQp6ch38l_aQukeablRkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v6/nq3OPeKr7RUSF_YDJ1woxnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+:hover{
+-webkit-transition: color 1s ease-in-out;
+-moz-transition: color 1s ease-in-out;
+-o-transition: color 1s ease-in-out;
+transition: color 1s ease-in-out;
+}
+
+::selection{background-color:rgba(255,255,255,255);}
+
+header{padding:2em 0;}
+header h1{}
+header h2{font-weight:800;}
+
+article{padding-bottom:1.5em;}
+article h5 {padding-bottom:1em;}
+article h5 a{padding-right:1em;}
+article figure{
+  margin-right:2em;
+  margin-bottom:1em;
+  margin-top:0.25em;
+  float:left;
+  width:40%;
+  height:auto;
+  overflow: hidden;
+}  /*cuando la pantalla esté en 768px de ancho max, se lee lo que sale a continuación*/
+@media (max-width: 768px) {
+article figure{width:100%; padding-right:0; clear:both;}
+}
+article figure img{width:100%; height:auto;filter:grayscale(100%); }
+article:hover figure img{
+  filter:grayscale(0);
+  } /*filtro en las imagenes*/
+
+aside{padding-top:0.5em;}
+
+aside h3{
+  margin-left:0.6em;
+  color:rgba(white);
+  font-size:1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.centralo {
+  padding: 2em;
+  text-align: center;
+}
+
+.algunos{
+margin-top: 4em;
+margin-bottom: 2em;
+}
+
+.wow{
+  margin-bottom: 2em;
+}
+
+a:link
+{
+ text-decoration:none;
+}
+
+.iconin {
+  margin: 2em;
+}
+footer{border-top:1px solid white; padding:1em 0; margin:3em 0 0 0;}
