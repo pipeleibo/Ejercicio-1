@@ -2,41 +2,8 @@
 body {
 
   background: #0a91ad; padding-top: 50px /*Se corre todo el contenido un poco más abajo para que no se tape con la barra de contenidos*/
-
 }
 
-/* latin-ext */
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/3isE9muMMOq1K7TQ7HkKvIDGDUGfDkXyfkzVDelzfFk.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v6/oaBFj7Fz9Y9_eW3k9Jd9X6CWcynf_cDxXwCLxiixG1c.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v6/NL7tQp6ch38l_aQukeablRkAz4rYn47Zy2rvigWQf6w.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Dosis';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Dosis ExtraBold'), local('Dosis-ExtraBold'), url(https://fonts.gstatic.com/s/dosis/v6/nq3OPeKr7RUSF_YDJ1woxnYhjbSpvc47ee6xR_80Hnw.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
 
 :hover{
 -webkit-transition: color 1s ease-in-out;
@@ -49,7 +16,7 @@ transition: color 1s ease-in-out;
 
 header{padding:2em 0;}
 header h1{}
-header h2{font-weight:800;}
+header h2{font-weight:400;}
 
 article{padding-bottom:1.5em;}
 article h5 {padding-bottom:1em;}
@@ -100,6 +67,14 @@ margin-bottom: 2em;
 a:link
 {
  text-decoration:none;
+}
+
+h3, h5, a.credits, a.navbar-item {
+  font-family: "Dosis";
+}
+
+body, h3, h5 {
+  color: white;
 }
 
 .iconin {
